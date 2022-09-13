@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Editor HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  </head>
+  <body>
+    <div disable">
+        Easy Image Editor<br>
+        <div>
+            <div>
+                <div>
+                    <label>Filters</label>
+                    <div>
+                        <button id="brightness">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Brightness</p>
+                            <p>100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div>
+                    <label>Rotate & Flip</label>
+                </div>
+            </div>
+            <div>
+                <img src="image-placeholder.svg" alt="preview-img">
+            </div>
+        </div>
+        <div>
+            <button>Reset Filters</button>
+            <div>
+                <input type="file" accept="image/*" hidden>
+                <button>Choose Image</button>
+                <button>Save Image</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
